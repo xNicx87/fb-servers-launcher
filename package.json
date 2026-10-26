@@ -1,0 +1,48 @@
+{
+  "name": "fb-servers-launcher",
+  "version": "1.0.0",
+  "description": "FB Servers - Launcher & Mod Manager for PES and FIFA",
+  "main": "dist-electron/main/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "electron .",
+    "build": "tsc && vite build && electron-builder",
+    "build:electron": "tsc -p tsconfig.node.json && vite build",
+    "preview": "vite preview",
+    "build:linux": "tsc && vite build && electron-builder --linux",
+    "build:win": "tsc && vite build && electron-builder --win"
+  },
+  "keywords": [
+    "launcher",
+    "pes",
+    "fifa",
+    "mod-manager",
+    "fb-servers",
+    "gaming"
+  ],
+  "author": "FB Servers Team",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "lucide-react": "^1.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "electron": "^34.2.0",
+    "electron-builder": "^25.1.8",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0",
+    "vite-plugin-electron": "^0.29.0",
+    "vite-plugin-electron-renderer": "^0.14.6"
+  }
+}

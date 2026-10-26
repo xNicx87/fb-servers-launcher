@@ -1,0 +1,36 @@
+appId: xyz.fbservers.launcher
+productName: FB Servers Launcher
+copyright: Copyright © 2026 FB Servers Team
+
+directories:
+  output: release
+  buildResources: build
+
+files:
+  - dist/**
+  - dist-electron/**
+  - server-manifest-sample/**
+  - package.json
+
+linux:
+  target:
+    - AppImage
+    - deb
+    - rpm
+    - tar.gz
+  category: Game
+  synopsis: FB Servers - Automated Mod & Patch Launcher for PES and FIFA
+  maintainer: FB Servers <support@fbservers.xyz>
+
+win:
+  target:
+    - nsis
+    - portable
+    - zip
+  artifactName: ${productName}-${version}-${os}-${arch}.${ext}
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: always
+  createStartMenuShortcut: true

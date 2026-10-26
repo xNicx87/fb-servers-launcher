@@ -1,0 +1,124 @@
+{
+  "version": "1.0.0",
+  "name": "FB Servers Central Repository",
+  "cdn_url": "https://cdn.fbservers.xyz",
+  "games": {
+    "pes2021": {
+      "id": "pes2021",
+      "name": "eFootball PES 2021",
+      "subtitle": "Season Update",
+      "steam_appid": "1186580",
+      "executables": {
+        "game": "PES2021.exe",
+        "mod_loader": "sider.exe",
+        "settings": "Settings.exe"
+      },
+      "default_paths": {
+        "windows": [
+          "C:\\Program Files (x86)\\Steam\\steamapps\\common\\eFootball PES 2021",
+          "D:\\Games\\SteamLibrary\\steamapps\\common\\eFootball PES 2021",
+          "C:\\Games\\eFootball PES 2021"
+        ],
+        "linux": [
+          "~/.local/share/Steam/steamapps/common/eFootball PES 2021",
+          "~/.steam/steam/steamapps/common/eFootball PES 2021"
+        ]
+      },
+      "save_paths": {
+        "windows": "%USERPROFILE%\\Documents\\KONAMI\\eFootball PES 2021 SEASON UPDATE",
+        "linux": "~/.local/share/Steam/steamapps/compatdata/1186580/pfx/drive_c/users/steamuser/Documents/KONAMI/eFootball PES 2021 SEASON UPDATE"
+      },
+      "patches": [
+        {
+          "id": "fb-pes2021-sider",
+          "name": "FB Servers Sider 7.2 + LiveCPK",
+          "version": "7.2.1",
+          "category": "core",
+          "required": true,
+          "description": "Inyector nativo en memoria para estadios, balones, pancartas y kits actualizados sin alterar el juego base.",
+          "download_url": "https://cdn.fbservers.xyz/patches/pes2021/fb_sider_v7.2.zip",
+          "size_bytes": 154800000,
+          "sha256": "8f83b10b0e5d0a51cb0cb8cfbb88bfa17cbdb85f67b5f10b7f8c5b0d0e1a2f3a",
+          "target_type": "game_root",
+          "launch_via": "sider.exe"
+        },
+        {
+          "id": "fb-pes2021-optionfile",
+          "name": "Option File Oficial FB Servers 2026",
+          "version": "4.0.0",
+          "category": "rosters",
+          "required": true,
+          "description": "Plantillas actualizadas a temporada 2026, fichajes mundiales, escudos reales y tácticas.",
+          "download_url": "https://cdn.fbservers.xyz/patches/pes2021/fb_option_file_2026.zip",
+          "size_bytes": 48200000,
+          "sha256": "4b6c9820f123abc456def78901234567890abcdef1234567890abcdef1234567",
+          "target_type": "save_folder"
+        },
+        {
+          "id": "fb-pes2021-stadiums",
+          "name": "Pack de Estadios Sudamericanos y Europeos",
+          "version": "2.1.0",
+          "category": "content",
+          "required": false,
+          "description": "Estadios hiperrealistas con iluminación dinámica y cánticos de hinchadas locales.",
+          "download_url": "https://cdn.fbservers.xyz/patches/pes2021/fb_stadiums_pack.zip",
+          "size_bytes": 1250000000,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "target_type": "sider_content"
+        }
+      ]
+    },
+    "fifa23": {
+      "id": "fifa23",
+      "name": "EA SPORTS FIFA 23",
+      "subtitle": "Edición Comunidad",
+      "steam_appid": "1811260",
+      "executables": {
+        "game": "FIFA23.exe",
+        "game_trial": "FIFA23_Trial.exe"
+      },
+      "default_paths": {
+        "windows": [
+          "C:\\Program Files\\EA Games\\FIFA 23",
+          "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FIFA 23",
+          "D:\\Games\\SteamLibrary\\steamapps\\common\\FIFA 23"
+        ],
+        "linux": [
+          "~/.local/share/Steam/steamapps/common/FIFA 23",
+          "~/.steam/steam/steamapps/common/FIFA 23"
+        ]
+      },
+      "save_paths": {
+        "windows": "%USERPROFILE%\\Documents\\FIFA 23\\settings",
+        "linux": "~/.local/share/Steam/steamapps/compatdata/1811260/pfx/drive_c/users/steamuser/Documents/FIFA 23/settings"
+      },
+      "patches": [
+        {
+          "id": "fb-fifa23-squads",
+          "name": "FB Squads Live Database 2026",
+          "version": "3.5.0",
+          "category": "rosters",
+          "required": true,
+          "description": "Plantillas desbloqueadas con todos los traspasos recientes y torneos internacionales actualizados.",
+          "download_url": "https://cdn.fbservers.xyz/patches/fifa23/Squads2026_FB",
+          "size_bytes": 1240000,
+          "sha256": "9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b",
+          "target_type": "save_folder"
+        },
+        {
+          "id": "fb-fifa23-graphics",
+          "name": "FB Realism Mod & Gameplay Overhaul",
+          "version": "1.8.0",
+          "category": "core",
+          "required": false,
+          "description": "Física de balón renovada, césped 4K, caras escaneadas y licencias completas.",
+          "download_url": "https://cdn.fbservers.xyz/patches/fifa23/fb_realism_mod.zip",
+          "size_bytes": 450000000,
+          "sha256": "1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+          "target_type": "game_root",
+          "launch_args": "-dataPath ModData"
+        }
+      ]
+    }
+  }
+}
